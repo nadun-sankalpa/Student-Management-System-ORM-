@@ -10,30 +10,32 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="770.0" prefWidth="1217.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ijse.controller.LoginFormController">
+<AnchorPane fx:id="rootNode" prefHeight="971.0" prefWidth="1886.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ijse.controller.LoginFormController">
    <children>
-      <Circle fill="#73ec8b" layoutX="330.0" layoutY="-180.0" radius="385.0" stroke="#73ec8b" strokeType="INSIDE" />
-      <Circle fill="#73ec8b" layoutX="330.0" layoutY="-129.0" opacity="0.4" radius="385.0" stroke="#73ec8b" strokeType="INSIDE" />
-      <ImageView fitHeight="776.0" fitWidth="552.0" layoutX="665.0" layoutY="-4.0">
+      <Circle fill="#73ec8b" layoutX="1096.0" layoutY="660.0" opacity="0.53" radius="317.0" stroke="#73ec8b" strokeType="INSIDE" />
+      <Circle fill="#73ec8b" layoutX="1138.0" layoutY="660.0" radius="317.0" stroke="#73ec8b" strokeType="INSIDE" />
+      <Circle fill="#73ec8b" layoutX="498.0" layoutY="-175.0" radius="518.0" stroke="#73ec8b" strokeType="INSIDE" />
+      <Circle fill="#73ec8b" layoutX="504.0" layoutY="-91.0" opacity="0.4" radius="518.0" stroke="#73ec8b" strokeType="INSIDE" />
+      <ImageView fitHeight="991.0" fitWidth="816.0" layoutX="1070.0">
          <image>
             <Image url="@../icon/Screenshot%202024-11-06%20132048.png" />
          </image>
       </ImageView>
-      <Circle fill="#73ec8b" layoutX="-14.0" layoutY="561.0" radius="211.0" stroke="#73ec8b" strokeType="INSIDE" />
-      <Circle fill="#73ec8b" layoutX="14.0" layoutY="554.0" opacity="0.53" radius="211.0" stroke="#73ec8b" strokeType="INSIDE" />
-      <Text layoutX="259.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" textAlignment="CENTER" wrappingWidth="145.0">
+      <Circle fill="#73ec8b" layoutX="-14.0" layoutY="660.0" radius="226.0" stroke="#73ec8b" strokeType="INSIDE" />
+      <Circle fill="#73ec8b" layoutX="-48.0" layoutY="652.0" opacity="0.53" radius="286.0" stroke="#73ec8b" strokeType="INSIDE" />
+      <Text layoutX="379.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" textAlignment="CENTER" wrappingWidth="239.0">
          <font>
-            <Font name="System Bold" size="41.0" />
+            <Font name="System Bold" size="66.0" />
          </font>
       </Text>
-      <TextField fx:id="txtUserID" layoutX="139.0" layoutY="328.0" onAction="#txtUserIdOnAction" prefHeight="57.0" prefWidth="409.0" promptText="Enter  User ID" style="-fx-background-color: #F0EBE3; -fx-background-radius: 12;" />
-      <TextField fx:id="txtPassword" layoutX="139.0" layoutY="427.0" onAction="#txtPasswordOnAction" prefHeight="57.0" prefWidth="409.0" promptText="Enter Password" style="-fx-background-color: #F0EBE3; -fx-background-radius: 12;" />
-      <Button layoutX="240.0" layoutY="540.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="230.0" style="-fx-background-color: #117554; -fx-background-radius: \\;" text="Login" textFill="WHITE">
+      <TextField fx:id="txtUserID" layoutX="278.0" layoutY="473.0" onAction="#txtUserIdOnAction" prefHeight="57.0" prefWidth="468.0" promptText="Enter  User ID" style="-fx-background-color: #F0EBE3; -fx-background-radius: 12;" />
+      <TextField fx:id="txtPassword" layoutX="278.0" layoutY="595.0" onAction="#txtPasswordOnAction" prefHeight="57.0" prefWidth="468.0" promptText="Enter Password" style="-fx-background-color: #F0EBE3; -fx-background-radius: 12;" />
+      <Button fx:id="btnLogin" layoutX="308.0" layoutY="734.0" mnemonicParsing="false" onAction="#btnLoginOnAction" prefHeight="57.0" prefWidth="393.0" style="-fx-background-color: #117554; -fx-background-radius: \\;" text="Login" textFill="WHITE">
          <font>
             <Font name="System Bold" size="22.0" />
          </font>
       </Button>
-      <Text layoutX="277.0" layoutY="618.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Do you dont have an account!" />
-      <Hyperlink layoutX="331.0" layoutY="625.0" onAction="#btnRegisterOnAction" text="Sign Up" />
+      <Text layoutX="434.0" layoutY="837.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Do you dont have an account!" />
+      <Hyperlink layoutX="488.0" layoutY="856.0" onAction="#btnRegisterOnAction" text="Sign Up" />
    </children>
 </AnchorPane>
